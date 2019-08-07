@@ -5,45 +5,45 @@
 }
 
 body {
-  font-family: "Overpass", sans-serif;
-  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
   color: #171A21;
   background-color: white;
 }
 
 h1 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 100px;
   color: #171A21;
 }
 
 h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 40px;
   color: #171A21;
 }
 
 h3 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   color: #171A21;
 }
 
 h4 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 30px;
   color: #171A21;
 }
 
 h6 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   color: #3b3b3b;
 }
 
 p {
-  font-family: "Overpass", sans-serif;
-  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
   color: #171A21;
   line-height: 160.7%;
 }
@@ -61,7 +61,7 @@ a {
   margin-top: 10px;
   padding: 10px 30px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
+  border-radius: 0px;
   transition: 0.3s;
 }
 .btn:hover {
@@ -139,25 +139,36 @@ a {
   font-size: 20px;
   transition: 0.3s;
 }
-.navContact img {
-  width: 30px;
+.navContact i {
+  margin-right: 15px;
 }
 .navContact a:hover {
-  border-bottom: 3px solid #171A21;
   transition: 0.1s;
-  color: black;
+  color: #525252;
   text-decoration: none;
+}
+
+.navIcons i:hover {
+  transition: 0.1s;
+  color: #525252;
+  text-decoration: none;
+}
+.navIcons a {
+  margin: 0 10px;
 }
 
 .mainGreeting {
   text-align: center;
-  margin: 30px 0 150px 0;
+  margin: 30px 0 100px 0;
 }
 .mainGreeting h6 {
-  margin-top: -20px;
+  margin-top: -5px;
 }
 .mainGreeting p {
   margin-top: 30px;
+}
+.mainGreeting img {
+  width: 230px;
 }
 
 .mySkills {
@@ -171,6 +182,10 @@ a {
 .skillIcons {
   display: flex;
   justify-content: space-evenly;
+}
+.skillIcons img {
+  width: 60px;
+  height: 60px;
 }
 
 .myTools {
@@ -193,13 +208,13 @@ a {
 
 .workSection h2 {
   text-align: center;
-  margin: 100px 0 50px 0;
+  margin: 100px 0 80px 0;
 }
 
 .work {
   width: 100%;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .work > .workText {
   position: absolute;
@@ -248,21 +263,32 @@ a {
   }
 }
 .dribbleImages {
-  margin-top: 70px;
+  margin-top: 100px;
   text-align: center;
+}
+.dribbleImages img {
+  margin: 20px 0;
 }
 
 footer {
-  margin: 100px 0;
+  margin: 100px 0 10px;
   text-align: center;
 }
 footer a {
   margin: 0 10px;
 }
+footer i {
+  margin-left: 5px;
+}
 @media only screen and (max-width: 768px) {
   footer {
-    margin: 40px 0 50px 0;
+    margin: 40px 0 10px 0;
   }
+}
+footer p {
+  margin-top: 100px;
+  opacity: 0.2;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
