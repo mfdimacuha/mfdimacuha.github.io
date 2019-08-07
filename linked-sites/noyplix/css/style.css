@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #0E0E0E;
+}
+
+h1 {
+  font-family: "Questrial", sans-serif;
+  font-size: 46px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-family: "Questrial", sans-serif;
+  font-size: 34px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-family: "Questrial", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.blue {
+  color: #347FC4;
+}
+
+.white {
+  color: white;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  height: 850px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.795);
+}
+header .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+header .arrowDown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  margin: auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 520px;
+  }
+}
+
+.mainGreeting {
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainGreeting h1 {
+  margin-bottom: 20px;
+}
+.mainGreeting p {
+  color: #A4A4A4;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .mainGreeting {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.categories {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 10px;
+}
+
+.catText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.catText a {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.catText a:hover {
+  color: #347FC4;
+}
+
+.catImages {
+  margin-top: 30px;
+  text-align: center;
+}
+.catImages img {
+  width: 24%;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.catImages:hover img:not(:hover) {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.75;
+}
+
+.plansText {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.plansText h2 {
+  margin-bottom: 15px;
+}
+
+.plansCard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 500px;
+  color: black;
+  text-align: center;
+  margin: 0 20px 15px;
+}
+.card img {
+  width: 15px;
+  margin-right: 7px;
+  color: #347FC4;
+}
+.card h2 {
+  color: black;
+  padding-bottom: 25px;
+}
+.card h3 {
+  color: black;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+.card ul {
+  text-align: left;
+  padding: 35px 50px;
+  list-style-type: none;
+  background-color: rgba(34, 83, 128, 0.13);
+}
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .card ul {
+    padding: 25px 40px;
+  }
+}
+.card .btn-card {
+  width: 100%;
+  height: 70px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.card .btn-card:hover {
+  background-color: #347FC4;
+  color: white;
+}
+
+.networks {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.networkLogos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 30px 50px;
+}
+.networkLogos img {
+  padding: 20px 5px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.callToAction {
+  background-color: #225380;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #347FC4;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.footer p {
+  font-size: 12px;
+  color: #225380;
+}
+.footer a {
+  text-decoration: none;
+  color: #225380;
+  font-size: 12px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: white;
+}
+
+.mainNav {
+  padding: 0 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+nav img {
+  width: 50%;
+}
+nav a {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+nav a:hover {
+  color: #347FC4;
+}
+
+.btn-white, .btn-blue {
+  padding: 15px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 16px;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .btn-white, .btn-blue {
+    padding: 10px 30px;
+  }
+}
+
+.btn-blue {
+  background-color: #347FC4;
+  color: white;
+  transition: 0.3s;
+}
+.btn-blue:hover {
+  background-color: #225380;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+.btn-white:hover {
+  background-color: #347FC4;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

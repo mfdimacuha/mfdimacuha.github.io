@@ -1,0 +1,40 @@
+// ======================
+//  BUTTONS
+// ======================
+
+%btn {
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px; 
+    display: inline-block;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px 30px;
+    }
+}
+
+.btn-blue {
+    @extend %btn;
+    background-color: $color-primary;
+    color: white;
+    transition: 0.3s;
+    
+
+    &:hover {
+        background-color: $color-secondary;
+    }
+}
+
+.btn-white {
+    @extend %btn;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: white;
+    }
+}

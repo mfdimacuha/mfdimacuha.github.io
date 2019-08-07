@@ -1,0 +1,33 @@
+// ======================
+//  NAVIGATION
+// ======================
+
+.mainNav {
+    padding: 0 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    img {
+        width: 50%;
+    }
+
+    a {
+            @include font($font-primary, 18px);
+            text-transform: uppercase;
+            transition: 0.3s;
+            white-space: nowrap;
+            
+            &:hover {
+                color: $color-primary;
+            }
+
+        }
+     
+
+
+}

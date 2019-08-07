@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elyu Surf | La Union Surfing</title>
+    <link rel="icon" href="images/icon-surfboard.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <header class="mainHeader">
+        <nav class="mainNav">
+            <div class="logo">
+                <img src="images/icon-surfboard.png" alt="surfboard logo">
+                <h2>Elyu Surf</h2>
+            </div>
+            <div class="desktopNav ">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#" class="">About Us</a></li>
+                    <li><a href="#" class="">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="mobileNav">
+                <p>&#9776;</p>
+            </div>
+        </nav>
+
+        <div id="homeGreeting">
+            <h1 class="wow fadeInUp slow">Experience La Union Surfing</h1>
+            <p class="wow fadeInUp slow">Summer is here and it’s the perfect time to go surfing. And what better way to experience it in La Union! Surfing is what put the province back on the tourism map.</p>
+            <a href="#content" class="btn wow fadeInUp fast delay-1s">Learn More</a>
+        </div>
+    </header>
+
+    <div id="content"></div>
+
+    <section class="infoOne wrapper">
+        <div class="infoImage wow fadeInRight slow">
+            <img src="images/info-img-01.png" alt="">
+         </div>
+        <div class="infoText">
+            <h1 class="wow fadeIn slow">Surf All Day</h1>
+            <p class="wow fadeIn slow">Enjoy our 9am - 11pm or 1pm - 5am surfing schedules! You can choose between a single day surf and multi-day surfs.</p>
+            <a href="#" class="btn wow fadeInUp fast delay-1s">Schedule</a>
+        </div>
+    </section>
+
+    <section class="gallery wrapper">
+        <h1 class="wow fadeIn slow">Visuals From Our Place</h1>
+        <p class="wow fadeIn slow">From palm trees to bahay kubos. The visual from our resort has the most breathtaking experience.</p>
+        <div class="carousel wow fadeIn slow">
+            <img src="images/img-carousel-04.png" class="one" alt="">
+            <img src="images/img-carousel-02.png" class="two" alt="">
+            <img src="images/img-carousel-01.png" class="three" alt="">
+            <img src="images/img-carousel-03.png" class="four"alt="">
+      </div>
+      <a href="3" class="btn wow fadeIn slow">View More</a>
+    </section>
+
+    <section class="infoTwo wrapper">
+        <div class="infoImage wow fadeInLeft slow">
+            <img src="images/info-img-02.png" alt="">
+        </div>
+        <div class="infoText">
+            <h1 class="wow fadeIn slow">Surf Teachers</h1>
+            <p class="wow fadeIn slow">We have a lot of patience and accomodating instructors ready to teach you the basics or some advanced tricks!</p>
+            <a href="#" class="btn wow fadeInUp fast delay-1s">About Us</a>
+        </div>
+    </section>
+
+    <section class="cta wrapper">
+        <h1 class="wow fadeInUp slow">Ready to go surfing in La Union?</h1>
+        <a href="#" class="btnWhite wow fadeInUp fast delay-1s">Book Now</a>
+    </section>
+
+    <footer>
+        <p>Created by Marc Dimacuha</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+   <script type="text/javascript">
+   $(document).ready(function() {
+   $('.mobileNav').click(function(){
+       $('.desktopNav').toggleClass('active');
+       $('.mainNav').toggleClass('navActive');
+   })
+})
+
+
+   $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 20) {
+	    $(".mainNav").css("background" , "#424874");
+	  } 
+	  else{
+		  $(".mainNav").css("background" , "transparent");  	
+	  }
+  })
+})
+</script>
+
+
+
+</body>
+</html>

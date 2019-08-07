@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-secondary;
+    font-size: 22px;
+    color: $color-primary;
+    background-color: white;
+}
+
+h1 {
+    font-family: $font-primary;
+    font-size: 100px;
+    color: $color-primary;
+    
+}
+
+h2 {
+    font-family: $font-primary;
+    font-size: 40px;
+    color: $color-primary;
+}
+
+h3 {
+    font-family: $font-primary;
+    font-size: 36px;
+    color: $color-primary;
+}
+
+h4 {
+    font-family: $font-primary;
+    font-size: 30px;
+    color: $color-primary;
+}
+
+h6 {
+    font-family: $font-primary;
+    font-size: 36px;
+    color: #3b3b3b;
+}
+
+p {
+    font-family: $font-secondary;
+    font-size: 22px;
+    color: $color-primary;
+    line-height: 160.7%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: white;
+    }
+
+    img {
+        margin-left: 5px;
+        width: 20px;
+    }
+}
+
+.container {
+    @include centered(80%);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+  // BASE RESPONSIVE STYLES 
+
+  @media only screen and (max-width: 768px) {
+
+    .container {
+        width: 98%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 28px;
+    }
+    
+    h6 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 200.7%;
+    }
+
+    li {
+        font-size: 18px;
+        line-height: 200.7%;
+    }
+} 

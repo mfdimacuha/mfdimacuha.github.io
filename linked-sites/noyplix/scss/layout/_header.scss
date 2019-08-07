@@ -1,0 +1,83 @@
+// ======================
+//  HEADER
+// ======================
+
+header {
+    height: 850px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.795);
+
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -100;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+    .arrowDown {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80px;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 520px;
+    }
+}
+
+.mainGreeting {
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include centered(55%);
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $color-gray;
+        margin-bottom: 30px
+    }
+
+    @media screen and (max-width: 768px) {
+        @include centered(95%);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // .video {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     overflow: hidden;
+//     z-index: -100;
+// }
