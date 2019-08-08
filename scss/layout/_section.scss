@@ -37,9 +37,11 @@
     li {
         h4 {
             margin-bottom: 15px;
+            color: black;
         }
         list-style: none;
         line-height: 200%;
+        color: rgba(0,0,0,.6);
     }
 }
 
@@ -98,6 +100,24 @@
 }
 
 
+
+
+// DRIBBLE IMAGES
+
+.dribbleImages {
+    margin-top: 100px;
+    text-align: center;
+
+    img {
+        margin: 20px 0;
+    }
+
+    h2 {
+        margin-bottom: 80px;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .work, .work2 {
         width: 100%;
@@ -114,15 +134,18 @@
             float: none;
         }
     }
-}
 
-// DRIBBLE IMAGES
+    .workText a {
+        margin-top: -8px;
+    }
 
-.dribbleImages {
-    margin-top: 100px;
-    text-align: center;
+    .workText h3 {
+        margin-top: -5px;
+    }
 
-    img {
-        margin: 20px 0;
+    .dribbleImages img {
+        margin-top: -10px;
     }
 }
+
+

@@ -1,0 +1,274 @@
+/* GLOBAL STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    color: white;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+h5 {
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.637);
+}
+
+.btn {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid white;
+    border-radius: 0px;
+    padding: 8px 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.btn:hover {
+    color: rgb(131, 131, 131);
+    border-color: rgb(131, 131, 131);
+}
+
+
+/* NAV */ 
+
+nav {
+    height: 120px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+    color: #c7c7c7;
+    margin: 0 10px;
+}
+
+
+/* HEADER */
+
+header {
+    padding-top: 90px;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+}
+
+header .container-fluid {
+    margin: 0;
+    padding: 0;
+    margin-top: -40px;
+}
+
+header img {
+    width: 100%;
+}
+
+/* SECTIONS */
+
+.cards {
+    margin-top: -50px;
+}
+
+.gallery {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box-1 box-1"
+                        "box-2 box-3"
+                        "box-4 box-4"
+                        "box-5 box-5"
+}
+
+
+.gallery h3 {
+    margin: -20px 0 10px;
+}
+
+.gallery .btn {
+    margin-top: 20px;
+}
+
+.box {
+    padding: 20px 100px;
+    width: 100%;
+}
+
+.box-1 {
+    grid-area: box-1;
+    background-image: url("../images/header-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.box-2 {
+    grid-area: box-2;
+    background-image: url("../images/gallery-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-3 {
+    grid-area: box-3;
+    background-image: url("../images/gallery-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-4 {
+    grid-area: box-4;
+    background-image: url("../images/gallery-3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-5 {
+    grid-area: box-5;
+    background-image: url("../images/gallery-4.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CTA */
+
+.cta-flex {
+    display: flex;
+    align-items: center;
+    margin: 250px 0;
+}
+
+.cta-flex h2 {
+    position: relative;
+}
+
+.cta-flex h1 {
+    color: #ffffff59;
+    font-size: 100px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    left: -150px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+ul:last-child li {
+    display: inline-block;
+}
+
+footer img {
+    width: 25px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 768px) {
+
+    h1, h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    header {
+        padding-top: 150px;
+    }
+
+    .cards {
+        margin-top: 50px;
+    }
+}

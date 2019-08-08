@@ -19,7 +19,7 @@
 
 .navContact {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.3s;
 
     i {
@@ -27,7 +27,7 @@
     }
     a:hover {
     transition: 0.1s;
-    color: rgb(82, 82, 82);
+    color: #ff4136;
     text-decoration: none;
     }
 }
@@ -36,7 +36,7 @@
 
     i:hover {
             transition: 0.1s;
-            color: rgb(82, 82, 82);
+            color: #ff4136;
             text-decoration: none;
     }
     a {
@@ -50,14 +50,25 @@
     text-align: center;
     margin: 30px 0 100px 0;
 
+    h1 {
+        color: #ff4136;
+    }
+
     h6 {
         margin-top: -5px;
     }
     p {
+        color: rgba(0,0,0,.6);
         margin-top: 30px;
     }
 
     img {
         width: 230px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainNav {
+        height: 70px;
     }
 }
