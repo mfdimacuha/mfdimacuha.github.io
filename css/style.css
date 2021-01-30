@@ -174,10 +174,12 @@ a {
 }
 .mainGreeting p {
   color: rgba(0, 0, 0, 0.6);
-  margin-top: 30px;
+  margin-top: 50px;
+  line-height: 40px;
 }
 .mainGreeting img {
   width: 230px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -224,7 +226,7 @@ a {
 
 .workSection h2 {
   text-align: center;
-  margin: 100px 0 80px 0;
+  margin: 130px 0 80px 0;
 }
 
 .work {
@@ -264,7 +266,7 @@ a {
 }
 
 .dribbleImages {
-  margin-top: 100px;
+  margin-top: 180px;
   text-align: center;
 }
 .dribbleImages img {
